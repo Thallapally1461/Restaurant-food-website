@@ -1,0 +1,553 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+
+}
+
+.cont {
+    height: 50vh;
+    width: 100vw;
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(./about/breadcumb.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+
+
+
+}
+
+.nav {
+    position: relative;
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease, top 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#navbar.scrolled {
+    height: 9.5vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.items {
+    display: flex;
+}
+
+.logo h1 {
+    color: orange;
+    font-size: 25px;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 40px;
+    position: relative;
+    color: orange;
+    right: 10px;
+}
+
+.items a {
+    padding: 12px 16px;
+    font-weight: 500;
+    position: relative;
+    color: white;
+}
+
+#bar {
+    display: none;
+}
+
+#bat {
+    background-color: orange;
+    padding: 12px 20px;
+    border-radius: 2px;
+    position: relative;
+}
+
+#home {
+    color: orange;
+}
+
+.items a:hover {
+    color: orange;
+}
+
+#bat:hover {
+    color: white;
+    background-color: brown;
+}
+
+.about {
+    position: relative;
+    top: 50px;
+    height: 38vh;
+    width: 100vw;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.habout {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#about {
+    color: red;
+    cursor: pointer;
+
+}
+
+#Home {
+    color: white;
+}
+
+#Home:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    position: relative;
+
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(32, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+footer .address {
+    height: 18vh;
+    width: 60vw;
+    background-color: rgb(230, 159, 8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+
+footer .address .fx {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .address .fx i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .address .fx p,
+h4 {
+    color: white;
+}
+
+footer .address .fx h4 {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+footer .address .fx p {
+    font-size: 15px;
+}
+
+.ftmenu {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    padding: var(--padding);
+    background-color: var(--main-bg-color);
+    color: var(--text-light);
+    align-items: flex-start;
+}
+
+
+.flogo {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.flogo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.flogo p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.soclogo {
+    display: flex;
+    gap: 15px;
+}
+
+.soclogo a {
+    color: var(--text-light);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.soclogo a i {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    border: 1px solid black;
+    color: aliceblue;
+
+}
+
+.soclogo a i:hover {
+    color: red;
+}
+
+.soclogo a:hover {
+    color: var(--highlight-color);
+}
+
+.ftmenu .quick,
+.ftmenu .ourmenu,
+.ftmenu .contact {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ftmenu .contact {
+    gap: 20px;
+}
+
+.ftmenu h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--highlight-color);
+}
+
+
+.ftmenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ftmenu ul li {
+    padding: 8px 0;
+}
+
+.ftmenu a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.ftmenu a:hover {
+    color: var(--highlight-color);
+}
+
+.ftmenu i {
+    font-size: 18px;
+}
+
+
+.contact input[type="email"] {
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+}
+
+.contact input[type="email"]:focus {
+    border-color: var(--highlight-color);
+}
+
+.contact input[type="submit"] {
+    padding: 12px;
+    background-color: var(--highlight-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: var(--secondary-bg-color);
+}
+
+
+.contact span p {
+    font-size: 14px;
+}
+
+.contact span {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .ftmenu {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .ftmenu .quick,
+    .ftmenu .ourmenu,
+    .ftmenu .contact {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .ftmenu h3 {
+        font-size: 18px;
+    }
+
+    .flogo img {
+        max-width: 150px;
+    }
+
+    .soclogo {
+        gap: 10px;
+    }
+}
+
+:root {
+    --main-bg-color: rgb(32, 30, 30);
+    --highlight-color: orangered;
+    --secondary-bg-color: rgb(230, 159, 8);
+    --text-light: white;
+    --font-family: Arial, sans-serif;
+    --padding: 20px;
+    --border-radius: 5px;
+    --gap: 30px;
+}
+
+.last {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(202, 8, 8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+}
+
+.last a {
+    padding: 10px 20px;
+    border: 1px solid wheat;
+    color: bisque;
+}
+
+.last a:hover {
+    color: yellow;
+}
+
+footer,
+.address,
+.ftmenu,
+.last {
+    opacity: 0;
+    transform: translateY(30px);
+
+}
+
+.address,
+.ftmenu,
+.last {
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+
+
+
+.card-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.card {
+    width: 180px;
+    height: 280px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgb(190, 188, 188);
+    position: relative;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+
+.card h2 {
+    color: black;
+    font-size: 16px;
+}
+
+.card h3 {
+    color: black;
+    font-size: 16px;
+}
+
+.card p {
+    position: relative;
+    bottom: 5px;
+    color: blueviolet;
+    font-size: 14px;
+}
+
+.card span a {
+    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    position: relative;
+    top: 10px;
+    border-radius: 25px;
+
+}
+.card span a:hover{
+    background-color: rgb(202, 8, 8);
+}
+
+.card a h2:hover {
+    color: red;
+}
+
+#bgr {
+    bottom: 145px;
+    height: 110px;
+    width: 110px;
+    color: red;
+    animation: bgrrot 10s linear infinite;
+}
+
+@keyframes bgrrot {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,1048 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    
+}
+
+.cont {
+    height: 50vh;
+    width: 100vw;
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(./about/breadcumb.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+ 
+
+
+}
+
+.nav {
+    position: relative;
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease, top 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#navbar.scrolled {
+    height: 9.5vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.items {
+    display: flex;
+}
+
+.logo h1 {
+    color: orange;
+    font-size: 25px;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 40px;
+    position: relative;
+    color: orange;
+    right: 10px;
+}
+
+.items a {
+    padding: 12px 16px;
+    font-weight: 500;
+    position: relative;
+    color: white;
+}
+
+#bar {
+    display: none;
+}
+
+#bat {
+    background-color: orange;
+    padding: 12px 20px;
+    border-radius: 2px;
+    position: relative;
+}
+
+#home {
+    color: orange;
+}
+
+.items a:hover {
+    color: orange;
+}
+
+#bat:hover {
+    color: white;
+    background-color: brown;
+}
+.about{
+    position: relative;
+    top: 50px;
+    height: 38vh;
+    width: 100vw;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h1{
+    font-size: 60px;
+    color: white;
+}
+.habout{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    color: white;
+}
+#about{
+    color: red;
+    cursor: pointer;
+
+}
+#Home{
+    color: white;
+}
+#Home:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* Food menu card container */
+
+.foodmenumaincont {
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.foodmenumaincont:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+}
+
+.foodmenucard {
+    height: 130vh;
+    width: 70vw;
+    background-color: rgb(236, 231, 231);
+    border-radius: 20px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.foodmenucard:hover {
+    transform: scale(1.05);
+}
+
+.foodmenucard .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.foodmenucard .list div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.foodmenucard .list div:hover {
+    color: orange;
+}
+
+.foodmenucard .list div span {
+    color: black;
+    font-weight: bold;
+}
+
+.headingbk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.headingbk h4 {
+    color: orange;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+hr {
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.menuitems .items img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.menuitems .items img:hover {
+    transform: scale(1.1);
+}
+
+.menuitems .items div {
+    display: flex;
+    height: 12vh;
+    width: 400px;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menuitems .items div:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: translateX(5px);
+}
+
+#Price {
+    font-weight: bold;
+    color: black;
+}
+
+.menuitems {
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.lefti {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.foodmenumaincont,
+.foodmenucard {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.fadeIn {
+    opacity: 1;
+}
+
+.menuitems .items {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.menuitems .items.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* counterbox  */
+
+.counterbox {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url("./bg/timerBg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.bugger img {
+    position: relative;
+    top: 30px;
+    left: -80px;
+    height: 430px;
+    width: 450px;
+}
+
+.timercont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    height: 300px;
+    width: 350px;
+    background-color: rgb(85, 83, 83);
+}
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.timer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 5px;
+    height: 80px;
+    width: 60px;
+    background-color: orangered;
+    margin: 0 8px;
+}
+
+.timer-item hr {
+    position: relative;
+    top: -10px;
+    border: 1px solid white;
+}
+
+.divider {
+    font-size: 15px;
+    color: #bdc3c7;
+}
+
+@media (max-width: 600px) {
+    .timer-container {
+        font-size: 15px;
+    }
+}
+
+.timercont h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.timercont h5 img {
+    height: 15px;
+    width: 15px;
+}
+
+.timercont h1 {
+    color: white;
+}
+
+.timercont a {
+    padding: 10px 30px;
+    background-color: orange;
+}
+
+.timercont a:hover {
+    background-color: red;
+}
+
+
+
+
+
+
+/* cheif container   */
+
+
+.cheifcont {
+    height: 120vh;
+    width: 100%;
+    background-color: #bdc3c7;
+    position: relative;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.cardche {
+    height: 200px;
+    width: 320px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    transition: transform 0.3s ease;
+}
+
+.cardche:hover {
+    transform: scale(1.05);
+}
+
+.cardche img {
+    position: absolute;
+    bottom: 100px;
+    height: 230px;
+    width: 232px;
+}
+
+.cardche a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 125px;
+}
+
+.cardche p {
+    font-size: 14px;
+    color: gray;
+    position: relative;
+    top: 132px;
+}
+
+.cardche a:hover {
+    color: red;
+}
+
+.cheicon {
+    display: flex;
+    gap: 3px;
+    position: absolute;
+    top: -45px;
+}
+
+.cheicon a i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chefe {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+
+.cheicon a i:hover {
+    background-color: red;
+}
+
+.cheifcont h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+}
+
+.scroll {
+    width: 100%;
+    position: relative;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.scroll-content {
+    display: flex;
+    animation: scrollAnimation 10s linear infinite;
+}
+
+.scroll-content img {
+    display: inline-block;
+    height: 100px;
+    margin-right: 50px;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lnewcon {
+    position: relative;
+    
+    height: 160vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color: rgb(213, 224, 224);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.lnewcon .hed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.lnewcon .hed h5 {
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lnewcon .hed h1 {
+    font-size: 45px;
+    color: black;
+}
+
+.carddish {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carddish img {
+    position: relative;
+    bottom: 40px;
+    height: 200px;
+    width: 298px;
+}
+
+.carddish .date {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.carddish .date i {
+    color: red;
+}
+
+.carddish .date p {
+    color: black;
+    font-size: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.carddish .date span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background: red;
+}
+
+.carddish .date span p {
+    color: white;
+}
+
+#fast {
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+#fast:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#arrow a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-right: 160px;
+    color: gray;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+#arrow i {
+    color: gray;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#arrow:hover a {
+    color: red;
+}
+
+#arrow:hover i {
+    transform: rotate(0);
+    color: red;
+}
+
+.dishcard {
+    width: 70vw;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.fimgs img {
+    height: 250px;
+    position: relative;
+    width: 250px;
+}
+
+.fimgs {
+    display: flex;
+    gap: 15px;
+}
+
+.fimgs .inst i {
+    font-size: 30px;
+}
+
+.fimgs .inst a {
+    left: 22px;
+    bottom: 2px;
+    position: absolute;
+    background-color: rgba(34, 34, 36, 0.6);
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fimgs .inst {
+    position: relative;
+}
+
+#glow {
+    display: none;
+}
+
+.fimgs .inst i:hover {
+    color: red;
+}
+
+.inst:hover #glow {
+    display: inline-block;
+}
+
+
+
+/* Footer */
+
+footer {
+    position: relative;
+   
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(32, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+footer .address {
+    height: 18vh;
+    width: 60vw;
+    background-color: rgb(230, 159, 8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+
+footer .address .fx {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .address .fx i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .address .fx p,
+h4 {
+    color: white;
+}
+
+footer .address .fx h4 {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+footer .address .fx p {
+    font-size: 15px;
+}
+
+.ftmenu {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    padding: var(--padding);
+    background-color: var(--main-bg-color);
+    color: var(--text-light);
+    align-items: flex-start;
+}
+
+
+.flogo {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.flogo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.flogo p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.soclogo {
+    display: flex;
+    gap: 15px;
+}
+
+.soclogo a {
+    color: var(--text-light);
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.soclogo a i {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    border: 1px solid black;
+    color: aliceblue;
+
+}
+
+.soclogo a i:hover {
+    color: red;
+}
+
+.soclogo a:hover {
+    color: var(--highlight-color);
+}
+
+.ftmenu .quick,
+.ftmenu .ourmenu,
+.ftmenu .contact {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ftmenu .contact {
+    gap: 20px;
+}
+
+.ftmenu h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--highlight-color);
+}
+
+
+.ftmenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ftmenu ul li {
+    padding: 8px 0;
+}
+
+.ftmenu a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.ftmenu a:hover {
+    color: var(--highlight-color);
+}
+
+.ftmenu i {
+    font-size: 18px;
+}
+
+
+.contact input[type="email"] {
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+}
+
+.contact input[type="email"]:focus {
+    border-color: var(--highlight-color);
+}
+
+.contact input[type="submit"] {
+    padding: 12px;
+    background-color: var(--highlight-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: var(--secondary-bg-color);
+}
+
+
+.contact span p {
+    font-size: 14px;
+}
+
+.contact span {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .ftmenu {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .ftmenu .quick,
+    .ftmenu .ourmenu,
+    .ftmenu .contact {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .ftmenu h3 {
+        font-size: 18px;
+    }
+
+    .flogo img {
+        max-width: 150px;
+    }
+
+    .soclogo {
+        gap: 10px;
+    }
+}
+
+:root {
+    --main-bg-color: rgb(32, 30, 30);
+    --highlight-color: orangered;
+    --secondary-bg-color: rgb(230, 159, 8);
+    --text-light: white;
+    --font-family: Arial, sans-serif;
+    --padding: 20px;
+    --border-radius: 5px;
+    --gap: 30px;
+}
+
+.last {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(202, 8, 8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+}
+
+.last a {
+    padding: 10px 20px;
+    border: 1px solid wheat;
+    color: bisque;
+}
+
+.last a:hover {
+    color: yellow;
+}
+
+footer,
+.address,
+.ftmenu,
+.last {
+    opacity: 0;
+    transform: translateY(30px);
+
+}
+
+.address,
+.ftmenu,
+.last {
+    transition: opacity 1s ease, transform 1s ease;
+}
