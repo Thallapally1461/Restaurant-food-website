@@ -7,6 +7,10 @@
     list-style-type: none;
     color: white;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 .cont {
     height: 115vh;
